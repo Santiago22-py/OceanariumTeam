@@ -25,14 +25,14 @@ const teamMembers = [
     name: 'Jasleen Kaur',
     role: 'Backend development and API integration',
     linkedin: 'https://www.linkedin.com/in/jasleen-kaler-525248401/',
-    image: './images/naman.jepg',
+    image: './images/jasleen.jpg',
     imageLabel: 'TM4',
   },
   {
     name: 'Tushar Dawar',
     role: 'Frontend experience for guides',
     linkedin: 'https://www.linkedin.com/in/tushar-dawar-74413530a/',
-    image: './images/naman.jpeg',
+    image: './images/tushar.jpg',
     imageLabel: 'TM5',
   },
   {
