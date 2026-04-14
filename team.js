@@ -38,8 +38,8 @@ const teamMembers = [
   {
     name: 'Evandro Maciel',
     role: 'Backend and Devops development',
-    linkedin: 'https://www.linkedin.com/in/team-member-06/',
-    image: '',
+    linkedin: 'https://www.linkedin.com/in/evandromaciel/',
+    image: './images/evandro.jpg',
     imageLabel: 'TM6',
   },
 ]
