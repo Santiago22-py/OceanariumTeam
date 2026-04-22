@@ -137,6 +137,83 @@ a {
   font-weight: 600;
 }
 
+.live-demo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  margin: 0 auto 2rem;
+  padding: 1.15rem 1.25rem;
+  border: 1px solid rgba(0, 119, 182, 0.18);
+  border-radius: 24px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.8)),
+    linear-gradient(120deg, rgba(202, 240, 248, 0.62), rgba(255, 255, 255, 0));
+  box-shadow: 0 18px 42px rgba(0, 81, 122, 0.12);
+  animation: rise-in 760ms ease-out both;
+  animation-delay: 140ms;
+}
+
+.live-demo-copy {
+  max-width: 46rem;
+}
+
+.live-demo-eyebrow {
+  margin: 0;
+  color: var(--primary);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.live-demo-copy h2 {
+  margin: 0.25rem 0 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.55rem, 3.1vw, 2.15rem);
+  line-height: 1;
+}
+
+.live-demo-copy p {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.live-demo-link {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 95, 146, 0.28);
+  background: linear-gradient(135deg, var(--primary), var(--primary-strong));
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.92rem;
+  box-shadow: 0 14px 30px rgba(0, 81, 122, 0.24);
+  transition: transform 220ms ease, box-shadow 220ms ease, filter 220ms ease;
+}
+
+.live-demo-link img {
+  width: 1.15rem;
+  height: 1.15rem;
+  filter: brightness(0) invert(1);
+}
+
+.live-demo-link:hover,
+.live-demo-link:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 38px rgba(0, 81, 122, 0.3);
+  filter: saturate(1.08);
+}
+
+.live-demo-link:focus-visible {
+  outline: 3px solid rgba(0, 180, 216, 0.34);
+  outline-offset: 4px;
+}
+
 .team-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -272,6 +349,20 @@ a {
 
   .hero {
     margin-bottom: 2rem;
+  }
+
+  .live-demo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.9rem;
+    padding: 1rem;
+    margin-bottom: 1.35rem;
+    border-radius: 20px;
+  }
+
+  .live-demo-link {
+    width: 100%;
+    justify-content: center;
   }
 
   .team-grid {
